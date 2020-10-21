@@ -1,0 +1,93 @@
+1) copy your project (so that if it get affected you will have safer side too).
+
+Create virtual env
+
+1) open cmd
+
+2) create virtual env outside project folder
+
+3) pip install virtualenv
+
+4) virtualenv .
+
+5) .\scripts\activate
+
+
+so you haveing envirment where you need to install everythong from starting
+
+1) pip install django
+
+2) go to project (example-> cd projectname)
+
+3) install all needed packeges
+
+4) pip freeze
+
+5) install packeges which it showing
+
+6) python manage.py makemigrations
+
+7) python manage.py migrate
+
+8) python manage.py runserver
+
+9) pip install git(it might show error go for step 10)
+
+10) git --version(it will show version)
+
+
+Heroku
+
+1) pip install django-heroku
+
+2) https://devcenter.heroku.com/articles/django-app-configuration
+
+3) follow the step giiven in webpage of step 2
+
+4) create text file with name Procfile.txt( in root directory that means where your manage.py file exist)
+
+5) open and write (web: gunicorn myproject.wsgi) with your project name insted of myproject
+
+6) remove extenstion of txt and makeit Procfile 
+
+7) pip install gunicorn
+
+
+
+settings.py changes
+
+
+1) pip install django-heroku
+
+2) Add the following import statement to the top of settings.py:
+
+	import django_heroku
+3) Then add the following to the bottom of settings.py:
+
+	# Activate Django-Heroku.
+	django_heroku.settings(locals())
+
+4) pip freeze > requirements.txt
+
+5) heroku login
+
+6) heroku create yourappname
+
+
+follow the step which is mention in heroku app(example is as follow steps from heroku app)
+
+
+1) git init
+
+2) heroku git:remote -a cookwithprajkta
+
+3) git add .
+
+4) git commit -am "make it better"
+
+5) git push heroku master
+
+
+
+
+https://cookwithprajkta.herokuapp.com/
