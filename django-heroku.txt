@@ -4,7 +4,7 @@ Create virtual env
 
 1) open cmd
 
-2) create virtual env outside project folder
+2) create virtual env outside project folder(desktop var folder asel ani tyat apla project asel tar dektop paryantach path de)
 
 3) pip install virtualenv
 
@@ -17,7 +17,7 @@ so you haveing envirment where you need to install everythong from starting
 
 1) pip install django
 
-2) go to project (example-> cd projectname)
+2) go to project (example-> cd project jyat ahe to folder)
 
 3) install all needed packeges
 
