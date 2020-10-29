@@ -88,6 +88,12 @@ follow the step which is mention in heroku app(example is as follow steps from h
 5) git push heroku master
 
 
+Database working in heroku
+
+1) heroku run python manage.py migrate
+
+2)heroku run python manage.py createsuperuser
+
 
 
 https://cookwithprajkta.herokuapp.com/
